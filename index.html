@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pour Cloclo</title>
+<meta name="theme-color" content="#1b2a38">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%2335aede' d='M16 28C6 20.5 2 15 2 10.5A7.5 7.5 0 0 1 16 7a7.5 7.5 0 0 1 14 3.5C30 15 26 20.5 16 28z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<noscript><style>
+  body.is-sealed{position:static;overflow:auto;height:auto}
+  .seal{display:none}
+  [data-reveal],.end,.photo figcaption{opacity:1!important;transform:none!important}
+  .photo{height:auto;overflow:visible;opacity:1}
+  .photo__frame img{transform:none;filter:none}
+  .photo__veil,.padlock,.replay{display:none}
+  #letter{display:block!important}
+  .bridge{display:block!important}
+  .finale{display:grid!important}
+</style></noscript>
+</head>
+<body class="is-sealed">
+
+<!-- ========== 1. L'ENVELOPPE ========== -->
+<section class="seal" id="seal">
+  <div class="seal__sky" aria-hidden="true">
+    <span class="sky__clouds"></span>
+    <span class="sky__clouds sky__clouds--2"></span>
+    <span class="sky__stars"></span>
+    <span class="sky__stars sky__stars--2"></span>
+  </div>
+
+  <div class="seal__inner">
+    <p class="eyebrow">Une lettre pour</p>
+    <h1 class="display">Cloclo</h1>
+
+    <button class="envelope" id="openBtn" type="button" aria-label="Ouvrir la lettre">
+      <span class="env" aria-hidden="true">
+        <span class="env__back"></span>
+        <span class="env__card"></span>
+        <span class="env__front"><span class="env__name">Cloclo</span></span>
+        <span class="env__flap"></span>
+        <span class="env__seal">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 27C7 20.2 3.4 15.3 3.4 11.2A6.8 6.8 0 0 1 16 8a6.8 6.8 0 0 1 12.6 3.2C28.6 15.3 25 20.2 16 27z"/></svg>
+        </span>
+      </span>
+    </button>
+
+    <p class="hint" id="hint">Appuie pour l'ouvrir</p>
+  </div>
+</section>
+
+<div class="wipe" id="wipe" aria-hidden="true"></div>
+<div class="ambient" id="ambient" aria-hidden="true"></div>
+
+<!-- ========== 2. LA LETTRE ========== -->
+<div class="progress" id="progress" aria-hidden="true"><i></i></div>
+
+<main class="letter" id="letter" hidden>
+
+  <article class="sheet">
+    <p class="salutation" data-reveal>Chère bebou,</p>
+
+    <p class="lede" data-reveal>Je voulais t’écrire ce petit mot pour te rappeler à quel point je suis fier de toi, mais aussi à quel point tu comptes pour moi. Je me rends compte que dernièrement, je ne te l’ai pas assez montré, et je voulais m’en excuser. Alors j’avais envie de te rappeler toutes les petites choses que j’aime chez toi, et à quel point je suis heureux et chanceux de t’avoir dans ma vie.</p>
+
+    <p data-reveal>Déjà, j’aime ta manière de sourire, toutes tes petites grimaces, et ta tête quand tu sais que tu viens de faire quelque chose qu’il ne fallait pas. J’aime aussi ta manière d’être avec les gens, ta politesse et la façon dont tu traites ta famille et moi. J’admire aussi à quel point tu es travailleuse et disciplinée, et tous les efforts que tu fais pour atteindre tes objectifs. Je suis fier de la personne que tu es, de tes qualités et de tout ce que tu accomplis, même si je ne te le dis pas assez.</p>
+
+    <hr class="rule" data-reveal>
+
+    <p data-reveal>J’aime aussi que tu sois toujours partante pour tester n’importe quelle activité ou partir en voyage avec moi, même quand je t’emmène faire des randos sous 38 degrés. J’adore qu’on puisse faire plein de choses ensemble, mais aussi qu’on puisse simplement ne rien faire et passer un bon moment quand même.</p>
+
+    <p data-reveal>J’adore tous les moments qu’on a déjà partagés : à l’époque au studio, nos trajets en transports, nos voyages, nos discussions sur tout et rien, nos rires, et nos vidéos YouTube pendant les repas. J’adore même m’ennuyer avec toi, parce qu’avec toi, même les moments les plus banals deviennent des bons souvenirs. Et je crois que c’est quelque chose que j’aime beaucoup chez nous : on n’a pas besoin de faire quelque chose d’extraordinaire pour être heureux ensemble.</p>
+
+    <hr class="rule" data-reveal>
+
+    <p data-reveal>Quand je pense à tout ça, je me rends compte qu’on a déjà plein de beaux souvenirs, mais surtout qu’il nous en reste tellement à créer. J’ai encore plein de voyages à faire avec toi, de nouvelles activités à tester… J’ai envie de continuer à découvrir de nouvelles choses avec toi, mais aussi de retrouver encore et encore tous ces petits moments qui font qu’on est bien ensemble.</p>
+
+    <p data-reveal>Je pense que ce qui me rend le plus heureux, c’est de me dire que je pourrai continuer à vivre tout ça avec toi, parce qu’on sera ensemble pour toujours&#8239;! Je sais qu’on a encore plein de choses à vivre et à découvrir, et j’ai vraiment hâte de voir tout ce qui nous attend.</p>
+
+    <p class="signoff" data-reveal>Je t’aime très fort, ma belle Cloclo.
+      <svg class="inline-heart" viewBox="0 0 32 32" aria-label="cœur" role="img"><path d="M16 27C7 20.2 3.4 15.3 3.4 11.2A6.8 6.8 0 0 1 16 8a6.8 6.8 0 0 1 12.6 3.2C28.6 15.3 25 20.2 16 27z"/></svg>
+    </p>
+  </article>
+
+  <!-- ========== 3. LE CADENAS ========== -->
+  <section class="vault" id="vault">
+    <p class="eyebrow dark" data-reveal>Et il reste une chose</p>
+    <p class="vault__line" data-reveal>Quelque part à Séoul, il y a une preuve.</p>
+
+    <button class="padlock" id="lockBtn" type="button" aria-label="Ouvrir le cadenas" data-reveal>
+      <svg viewBox="0 0 64 82" aria-hidden="true">
+        <g class="padlock__shackle">
+          <path d="M20 32V21a12 12 0 0 1 24 0v11" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/>
+        </g>
+        <path class="padlock__body" d="M32 76C13.5 61.5 5.5 51.6 5.5 42.6A11.3 11.3 0 0 1 32 35.6a11.3 11.3 0 0 1 26.5 7c0 9-8 18.9-26.5 33.4z"/>
+        <circle class="padlock__dot" cx="24.5" cy="43.5" r="3.1"/>
+        <circle class="padlock__dot" cx="39.5" cy="43.5" r="3.1"/>
+      </svg>
+      <span class="padlock__label">Appuie sur le cadenas</span>
+    </button>
+  </section>
+
+  <!-- ========== 4. LA PHOTO ========== -->
+  <figure class="photo" id="photo">
+    <div class="photo__frame">
+      <img src="pic.jpeg" width="1200" height="1600" alt="Notre cadenas accroché à la N Seoul Tower au coucher du soleil" decoding="async">
+      <span class="photo__veil"></span>
+    </div>
+    <figcaption>
+      <span class="photo__names">Chloe <svg class="inline-heart sm" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 27C7 20.2 3.4 15.3 3.4 11.2A6.8 6.8 0 0 1 16 8a6.8 6.8 0 0 1 12.6 3.2C28.6 15.3 25 20.2 16 27z"/></svg> Garik</span>
+      <span class="photo__meta">02 · 06 · 2026 — N Seoul Tower</span>
+    </figcaption>
+  </figure>
+
+  <p class="bridge" id="bridge">On l’a fermé, et on a jeté la clé.</p>
+
+  <!-- ========== 5. LE CIEL DE LA PHOTO, EN GRAND ========== -->
+  <footer class="finale" id="end">
+    <div class="finale__bg" aria-hidden="true">
+      <img src="pic2.jpeg" alt="" decoding="async">
+    </div>
+    <div class="finale__inner">
+      <div class="finale__photo">
+        <img src="pic2.jpeg" width="1600" height="1200" alt="Nous deux en randonnée, face aux Alpes" decoding="async">
+      </div>
+      <p class="finale__line">Et ce n’est que le début.</p>
+      <p class="finale__forever">Pour toujours.</p>
+      <button class="replay" id="replayBtn" type="button">Relire la lettre</button>
+    </div>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
